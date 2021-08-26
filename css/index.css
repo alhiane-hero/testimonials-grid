@@ -1,0 +1,257 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600&display=swap');
+
+* {
+
+    margin: 0;
+
+    padding: 0;
+
+    box-sizing: border-box;
+
+}
+
+body {
+
+    font-family: 'Barlow Semi Condensed', sans-serif;
+
+}
+
+.container {
+
+    width: 100%;
+    
+    padding-left: 15px;
+
+    padding-right: 15px;
+
+    margin-left: auto;
+
+    margin-right: auto;
+
+}
+
+@media ( min-width: 768px ) {
+
+    .container {
+
+        width: 750px;
+
+    }
+    
+}
+
+@media ( min-width: 992px ) {
+
+    .container {
+
+        width: 970px;
+
+    }
+    
+}
+
+@media ( min-width: 1200px ) {
+
+    .container {
+
+        width: 1170px;
+
+    }
+    
+}
+
+.testimonials {
+
+    padding-top: 60px;
+
+    padding-bottom: 60px;
+
+    background-color: hsl( 210, 46%, 95% );
+
+}
+
+.testimonials .grid-box {
+
+    display: grid;
+
+    grid-template-columns: repeat( 4, 1fr );
+
+    grid-gap: 30px;
+
+    grid-template-areas: "cnt-bx-1 cnt-bx-1 cnt-bx-2 cnt-bx-3"
+                         "cnt-bx-4 cnt-bx-5 cnt-bx-5 cnt-bx-3";
+
+} 
+
+@media ( min-width: 768px ) and ( max-width: 991px ) {
+
+    .testimonials .grid-box {
+
+        grid-template-areas: "cnt-bx-3 cnt-bx-1 cnt-bx-1 cnt-bx-1"
+                            "cnt-bx-3 cnt-bx-2 cnt-bx-4 cnt-bx-4"
+                            "cnt-bx-3 cnt-bx-5 cnt-bx-5 cnt-bx-5";
+
+    }
+    
+}
+
+@media ( max-width: 767px ) {
+
+    .testimonials .grid-box {
+
+        grid-template-areas: "cnt-bx-1 cnt-bx-1 cnt-bx-1 cnt-bx-1"
+                            "cnt-bx-2 cnt-bx-2 cnt-bx-2 cnt-bx-2"
+                            "cnt-bx-4 cnt-bx-4 cnt-bx-4 cnt-bx-4"
+                            "cnt-bx-5 cnt-bx-5 cnt-bx-5 cnt-bx-5"
+                            "cnt-bx-3 cnt-bx-3 cnt-bx-3 cnt-bx-3";
+
+    }
+
+}
+
+.testimonials .content-box {
+
+    padding: 30px;
+
+    box-shadow: 0 0 30px rgba( 0, 0, 0, .1 );
+
+    border-radius: 6px;
+
+}
+
+.testimonials .content-box:first-child {
+
+    grid-area: cnt-bx-1;
+
+    background-color: hsl( 263, 55%, 52% );
+
+}
+
+.testimonials .content-box:nth-child( 2 ) {
+
+    grid-area: cnt-bx-2;
+
+    background-color: hsl( 216, 18%, 35% );
+
+}
+
+.testimonials .content-box:nth-child( 3 ) {
+
+    grid-area: cnt-bx-3;
+
+    background-color: hsl( 0, 0%, 100% );
+
+}
+
+.testimonials .content-box:nth-child( 4 ) {
+
+    grid-area: cnt-bx-4;
+
+    background-color: hsl( 0, 0%, 100% );
+
+}
+
+.testimonials .content-box:last-child {
+
+    grid-area: cnt-bx-5;
+
+    background-color: hsl( 217, 30%, 14% );
+
+}
+
+.testimonials .content-box .img-box {
+
+    display: flex;
+
+    align-items: center;
+
+    margin-bottom: 20px;
+
+}
+
+.testimonials .content-box .img-box img {
+
+    border-radius: 50%;
+
+}
+
+.testimonials .content-box .img-box .info {
+
+    margin-left: 15px;
+
+}
+
+.testimonials .content-box .img-box .info h3 {
+
+    font-size: 15px;
+
+    font-weight: 500;
+
+    color: hsl( 0, 0%, 100% );
+
+    margin-bottom: 2px;
+
+}
+
+.testimonials .content-box:nth-child( 3 ) .img-box .info h3,
+.testimonials .content-box:nth-child( 4 ) .img-box .info h3 {
+
+    color: hsl( 225, 6%, 49% );
+
+}   
+
+.testimonials .content-box .img-box .info span {
+
+    font-size: 13px;
+
+    font-weight: 500;
+
+    color: hsl( 0, 0%, 100% );
+
+    opacity: .5;
+
+}
+
+.testimonials .content-box:nth-child( 3 ) .img-box .info span,
+.testimonials .content-box:nth-child( 4 ) .img-box .info span {
+
+    color: hsl( 225, 6%, 49% );
+
+}  
+
+.testimonials .content-box p {
+
+    font-size: 13px;
+
+    line-height: 1.7;
+
+    color: hsl( 0, 0%, 100% );
+
+}
+
+.testimonials .content-box:nth-child( 3 ) p,
+.testimonials .content-box:nth-child( 4 ) p {
+
+    color: hsl( 225, 6%, 49% );
+
+}
+
+.testimonials .content-box p:first-of-type {
+
+    opacity: 1;
+
+    font-weight: 600;
+
+    letter-spacing: 1px;
+
+    margin-bottom: 15px;
+
+}
+
+.testimonials .content-box p:last-of-type {
+
+    opacity: .7;
+
+    font-weight: 500;
+
+}
